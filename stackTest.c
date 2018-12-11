@@ -153,6 +153,5 @@ int main()
             // the previous instruction
             printf("(This instruction is an operand for a function)\n\n");
         }
-
     }
 }

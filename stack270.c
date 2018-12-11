@@ -337,7 +337,6 @@ int ifeq(struct stack270 *stk)
     }
 }
 
-
 /* remove value from the top of stack; if this value is not zero, skip forward x 
    instructions (or backward if x is negative) */
 int ifne(struct stack270 *stk)
@@ -385,7 +384,6 @@ int idec(struct stack270 *stk)
 
     return result;
 }
-
 
 /* skip forward x instructions (or backward if x is negative) */
 int igoto(struct stack270 *stk, int operand)
