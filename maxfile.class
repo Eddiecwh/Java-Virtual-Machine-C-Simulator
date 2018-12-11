@@ -1,0 +1,33 @@
+iconst 1052688
+iconst 255
+iand
+iconst 1052688
+iconst 8
+ishr
+iconst 255
+iand
+dup
+iconst 1052688
+iconst 16
+ishr
+isub
+ifne 3
+isub
+ifeq 3
+iconst_0
+goto 2
+iconst_1
+iinc
+iconst_2
+ishl
+iconst_2
+ineg
+iadd
+iconst_2
+idiv
+iconst_2
+ior
+idec
+iconst 21
+imul
+ireturn
