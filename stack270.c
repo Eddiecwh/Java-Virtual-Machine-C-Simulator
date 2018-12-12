@@ -91,6 +91,11 @@ int dup(struct stack270 *stk)
     }
 }
 
+void freeStack(struct stack270 *stk){
+    free((*stk).contents);
+    free(stk);
+}
+
 // readBytecode: given filename, opens the file, reads each line into an array of C-strings, and closes the file
 // Returns: array of C-strings
 // Limitation: works on files with 256 lines or less

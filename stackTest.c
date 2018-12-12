@@ -3,7 +3,11 @@
    CSCI_270
    This program is designed to test functions from stack270.c */
 
-#include "stack270.c"
+#include "stack270.h"
+#include <stdio.h>
+#include <malloc/_malloc.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
@@ -153,5 +157,6 @@ int main()
             // the previous instruction
             printf("(This instruction is an operand for a function)\n\n");
         }
+        freeStack(&stack);
     }
 }

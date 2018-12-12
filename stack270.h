@@ -25,5 +25,46 @@ int peek(struct stack270 *stk, int *value);
 // pushes a duplicate of the top value onto the stack; returns the usual
 int dup(struct stack270 *stk); 
 
-// removes the top two items on the stack, adds them, and pushes the result; returns the usual
-int add(struct stack270 *stk); 
+// Free malloc'd space
+void freeStack(struct stack270 *stk);
+
+char **readBytecode(char *filename);
+
+int iadd(struct stack270 *stk);
+
+int iand(struct stack270 *stk);
+
+int isub(struct stack270 *stk);
+
+int imul(struct stack270 *stk);
+
+int idiv(struct stack270 *stk);
+
+int ineg(struct stack270 *stk);
+
+int ior(struct stack270 *stk);
+
+int ishl(struct stack270 *stk);
+
+int ishr(struct stack270 *stk);
+
+int iconst_0(struct stack270 *stk);
+
+int iconst_1(struct stack270 *stk);
+
+int iconst_2(struct stack270 *stk);
+
+int iconst(struct stack270 *stk, int operand);
+
+int ifeq(struct stack270 *stk);
+
+int ifne(struct stack270 *stk);
+
+int iinc(struct stack270 *stk);
+
+int idec(struct stack270 *stk);
+
+int igoto(struct stack270 *stk, int operand);
+
+int ireturn(struct stack270 *stk);
+
